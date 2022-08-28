@@ -1,0 +1,35 @@
+<VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>Comtroke Template Engine</Name>
+    <Description>Domain Driven Design: Backend Solution Template</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>DDD_Backend</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>comstroke_icon.png</Icon>
+  </TemplateData>
+  <TemplateContent>
+	<ProjectCollection>
+            <ProjectTemplateLink ProjectName="Comstroke.$safeprojectname$.BusinessEngine" CopyParameters="true">
+                Comstroke.Clientes.BusinessEngine\Comstroke.Clientes.BusinessEngine.vstemplate
+            </ProjectTemplateLink>
+			<ProjectTemplateLink ProjectName="Comstroke.$safeprojectname$.DataEngine" CopyParameters="true">
+                Comstroke.Clientes.DataEngine\Comstroke.Clientes.DataEngine.vstemplate
+            </ProjectTemplateLink>
+			<ProjectTemplateLink ProjectName="Comstroke.$safeprojectname$.Model" CopyParameters="true">
+                Comstroke.Clientes.Model\Comstroke.Clientes.Model.vstemplate
+            </ProjectTemplateLink>
+			<ProjectTemplateLink ProjectName="Comstroke.$safeprojectname$.Rest" CopyParameters="true">
+                Comstroke.Clientes.Rest\Comstroke.Clientes.Rest.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="Comstroke.$safeprojectname$.UnitTest" CopyParameters="true">
+                Comstroke.Clientes.UnitTest\Comstroke.Clientes.UnitTest.vstemplate
+            </ProjectTemplateLink>
+        </ProjectCollection>
+  </TemplateContent>
+</VSTemplate>

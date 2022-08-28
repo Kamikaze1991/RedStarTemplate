@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+	<ProjectGuid>{$ext_guid2$}</ProjectGuid>
+	<RootNamespace>$safeprojectname$</RootNamespace>
+	<AssemblyName>$safeprojectname$</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+  <ItemGroup>
+	<ProjectReference Include="..\Comstroke.$ext_safeprojectname$.Model\Comstroke.$ext_safeprojectname$.Model.csproj">
+		<Project>{$ext_guid3$}</Project>
+		<Name>Comstroke.$ext_safeprojectname$.Model</Name>
+	</ProjectReference>
+  </ItemGroup>
+</Project>

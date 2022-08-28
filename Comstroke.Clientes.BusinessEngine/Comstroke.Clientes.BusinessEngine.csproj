@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+	<ProjectGuid>{$ext_guid1$}</ProjectGuid>
+	<RootNamespace>$safeprojectname$</RootNamespace>
+	<AssemblyName>$safeprojectname$</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Ejecucion\CanalExterno\Clientes\**" />
+    <EmbeddedResource Remove="Ejecucion\CanalExterno\Clientes\**" />
+    <None Remove="Ejecucion\CanalExterno\Clientes\**" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="Ejecucion\CanalExterno\" />
+    <Folder Include="Internal\CanalExterno\" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Comstroke.Global.Contract" Version="1.0.10" />
+    <PackageReference Include="Comstroke.Global.ModelEngine" Version="1.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.8" />
+  </ItemGroup>
+  <ItemGroup>
+	<ProjectReference Include="..\Comstroke.$ext_safeprojectname$.DataEngine\Comstroke.$ext_safeprojectname$.DataEngine.csproj">
+		<Project>{$ext_guid2$}</Project>
+		<Name>Comstroke.$ext_safeprojectname$.DataEngine</Name>
+	</ProjectReference>
+	<ProjectReference Include="..\Comstroke.$ext_safeprojectname$.Model\Comstroke.$ext_safeprojectname$.Model.csproj">
+		<Project>{$ext_guid3$}</Project>
+		<Name>Comstroke.$ext_safeprojectname$.Model</Name>
+	</ProjectReference>
+  </ItemGroup>
+</Project>

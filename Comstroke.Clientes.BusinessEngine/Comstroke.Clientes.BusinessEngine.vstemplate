@@ -1,0 +1,58 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>$safeprojectname$</Name>
+    <Description>&lt;No hay ninguna descripción disponible&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Comstroke.Clientes.BusinessEngine</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="$safeprojectname$.csproj" File="Comstroke.Clientes.BusinessEngine.csproj" ReplaceParameters="true">
+      <Folder Name="Ejecucion" TargetFolderName="Ejecucion">
+        <Folder Name="CanalExterno" TargetFolderName="CanalExterno" />
+        <Folder Name="CanalInterno" TargetFolderName="CanalInterno">
+          <Folder Name="Autorizaciones" TargetFolderName="Autorizaciones">
+            <ProjectItem ReplaceParameters="true" TargetFileName="ClaveBP.cs">ClaveBP.cs</ProjectItem>
+          </Folder>
+          <Folder Name="Clientes" TargetFolderName="Clientes">
+            <ProjectItem ReplaceParameters="true" TargetFileName="ActualizarClienteBP.cs">ActualizarClienteBP.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ConsultarClienteBP.cs">ConsultarClienteBP.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="EnrolarClienteBP.cs">EnrolarClienteBP.cs</ProjectItem>
+          </Folder>
+          <Folder Name="Cuentas" TargetFolderName="Cuentas">
+            <ProjectItem ReplaceParameters="true" TargetFileName="ActualizarCuentaBP.cs">ActualizarCuentaBP.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ConsultarCuentaBP.cs">ConsultarCuentaBP.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="EnrolarCuentaBP.cs">EnrolarCuentaBP.cs</ProjectItem>
+          </Folder>
+          <Folder Name="Movimientos" TargetFolderName="Movimientos">
+            <ProjectItem ReplaceParameters="true" TargetFileName="ActualizarMovimientoBP.cs">ActualizarMovimientoBP.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ConsultarMovimientoBP.cs">ConsultarMovimientoBP.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ConsultarMovimientoFechaBP.cs">ConsultarMovimientoFechaBP.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="RegistrarMovimientoBP.cs">RegistrarMovimientoBP.cs</ProjectItem>
+          </Folder>
+        </Folder>
+      </Folder>
+      <Folder Name="Internal" TargetFolderName="Internal">
+        <Folder Name="CanalExterno" TargetFolderName="CanalExterno" />
+        <Folder Name="CanalInterno" TargetFolderName="CanalInterno">
+          <ProjectItem ReplaceParameters="true" TargetFileName="ActualizarInformacionBP.cs">ActualizarInformacionBP.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ConsultarInformacionBP.cs">ConsultarInformacionBP.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="InsertarInformacionBP.cs">InsertarInformacionBP.cs</ProjectItem>
+        </Folder>
+        <Folder Name="General" TargetFolderName="General">
+          <ProjectItem ReplaceParameters="true" TargetFileName="ActualizarInformacion.cs">ActualizarInformacion.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="InsertarInformacion.cs">InsertarInformacion.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="RecuperarInformacion.cs">RecuperarInformacion.cs</ProjectItem>
+        </Folder>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

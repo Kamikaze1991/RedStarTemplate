@@ -1,0 +1,89 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Usuario\\Documents\\Visual Studio 2022\\My Exported Templates\\Comstroke.Template.Rest\\Comstroke.Clientes.DataEngine\\Comstroke.Clientes.DataEngine.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Usuario\\Documents\\Visual Studio 2022\\My Exported Templates\\Comstroke.Template.Rest\\Comstroke.Clientes.DataEngine\\Comstroke.Clientes.DataEngine.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\Visual Studio 2022\\My Exported Templates\\Comstroke.Template.Rest\\Comstroke.Clientes.DataEngine\\Comstroke.Clientes.DataEngine.csproj",
+        "projectName": "Comstroke.Clientes.DataEngine",
+        "projectPath": "C:\\Users\\Usuario\\Documents\\Visual Studio 2022\\My Exported Templates\\Comstroke.Template.Rest\\Comstroke.Clientes.DataEngine\\Comstroke.Clientes.DataEngine.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Documents\\Visual Studio 2022\\My Exported Templates\\Comstroke.Template.Rest\\Comstroke.Clientes.DataEngine\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://robcorp.pkgs.visualstudio.com/_packaging/ENCHIRIDION/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Usuario\\Documents\\Visual Studio 2022\\My Exported Templates\\Comstroke.Template.Rest\\Comstroke.$projectname$.Model\\Comstroke.$projectname$.Model.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Documents\\Visual Studio 2022\\My Exported Templates\\Comstroke.Template.Rest\\Comstroke.$projectname$.Model\\Comstroke.$projectname$.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

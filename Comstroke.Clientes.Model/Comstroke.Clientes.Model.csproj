@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+	<ProjectGuid>{$ext_guid3$}</ProjectGuid>
+	<RootNamespace>$safeprojectname$</RootNamespace>
+	<AssemblyName>$safeprojectname$</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Comstroke.Global.ModelEngine" Version="1.0.10" />
+  </ItemGroup>
+</Project>

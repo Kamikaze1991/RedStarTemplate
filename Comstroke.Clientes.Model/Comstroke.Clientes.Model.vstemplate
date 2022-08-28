@@ -1,0 +1,58 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>$safeprojectname$</Name>
+    <Description>&lt;No hay ninguna descripción disponible&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Comstroke.Clientes.Model</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="$safeprojectname$.csproj" File="Comstroke.Clientes.Model.csproj" ReplaceParameters="true">
+      <Folder Name="Entidad" TargetFolderName="Entidad">
+        <Folder Name="Transaccional" TargetFolderName="Transaccional">
+          <ProjectItem ReplaceParameters="true" TargetFileName="ClaveTransaccion.cs">ClaveTransaccion.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ClienteTransaccion.cs">ClienteTransaccion.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="CuentaTransaccion.cs">CuentaTransaccion.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="MovimientoFechaTransaccion.cs">MovimientoFechaTransaccion.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="MovimientoTransaccion.cs">MovimientoTransaccion.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Transaccionalidad" TargetFolderName="Transaccionalidad">
+          <ProjectItem ReplaceParameters="true" TargetFileName="Clave.cs">Clave.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Cliente.cs">Cliente.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Cuenta.cs">Cuenta.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Movimiento.cs">Movimiento.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="MovimientoFecha.cs">MovimientoFecha.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Persona.cs">Persona.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Transaccion" TargetFolderName="Transaccion">
+        <Folder Name="Request" TargetFolderName="Request">
+          <Folder Name="Transaccionalidad" TargetFolderName="Transaccionalidad">
+            <ProjectItem ReplaceParameters="true" TargetFileName="ClaveRequest.cs">ClaveRequest.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ClienteRequest.cs">ClienteRequest.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="CuentaRequest.cs">CuentaRequest.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="MovimientoFechaRequest.cs">MovimientoFechaRequest.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="MovimientoRequest.cs">MovimientoRequest.cs</ProjectItem>
+          </Folder>
+        </Folder>
+        <Folder Name="Response" TargetFolderName="Response">
+          <Folder Name="Transaccionalidad" TargetFolderName="Transaccionalidad">
+            <ProjectItem ReplaceParameters="true" TargetFileName="ClaveResponse.cs">ClaveResponse.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ClienteResponse.cs">ClienteResponse.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="CuentaResponse.cs">CuentaResponse.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="MovimientoFechaResponse.cs">MovimientoFechaResponse.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="MovimientoResponse.cs">MovimientoResponse.cs</ProjectItem>
+          </Folder>
+        </Folder>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
